@@ -1,0 +1,211 @@
+// for laptops
+@media only screen and (max-width: 992px) {
+    body{
+        .container{
+            width: 100%;
+            margin-top: 0;
+            header{
+                .header-main{
+                    position: relative;
+                    top: 50px;
+                    flex-direction: column;
+                    .header-main__right{
+                        margin-top: 50px;
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+            main{
+                margin-top: 300px;
+                width: 100%;
+                .main-bottom{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                    .categorie{
+                        width: 70%;
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .sct-1{
+                margin-top: 560px;
+                width: 100%;
+                .sct-1__top{
+                    flex-direction: column;
+                    margin-top: 30px;
+                    .sct-1__top-left{
+                        width: 70%;
+                    }
+                    .sct-1__top-right{
+                        margin-top: 40px;
+                        width: 100%;
+                    }
+                }
+                .sct-1__bottom{
+                    flex-direction: column-reverse;
+                    .sct-1__bottom-left{
+                        width: 100%;
+                        margin-top: 50px;
+                    }
+                    .sct-1__bottom-right{
+                        width: 60%;
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .sct-2{
+                margin-top: 500px;
+                .main-bottom{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 50px;
+                    .categorie{
+                        width: 60%;
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+            .sct-3{
+                margin-top: 600px;
+                .sct-3-contents{
+                    h5{
+                        width: 60%;
+                    }
+                }
+            }
+
+
+
+
+
+            .my-socials{
+                gap: 10px;
+            }
+        }
+    }
+}
+
+// for mobile
+@media only screen and (max-width: 600px) {
+    body{
+        .container{
+            header{
+                .header-main{
+                    .header-main__left{
+                        width: 95%; 
+                    }
+                }
+                nav{
+                    ul{
+                        position: fixed;
+                        left: -100%;
+                        top: 90px;
+                        gap: 0;
+                        flex-direction: column;
+                        background-color: black;
+                        width: 100%;
+                        text-align: center;
+                        transition: 0.3s;
+                        li{
+                            margin: 16px 0;
+                        }
+                        &.active{
+                            left: 0;
+                        }
+                    }
+                    .toggle{
+                        display: block;
+                        &.active span:nth-child(2){
+                            opacity: 0;
+                        }
+                        &.active span:nth-child(1){
+                            transform: rotateX(8px) rotate(45deg);
+                        }
+                        &.active span:nth-child(3){
+                            transform: rotateX(-8px) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+
+
+
+            .sct-1{
+                margin-top: 750px;
+            }
+
+
+
+            .sct-2{
+                margin-top: 600px;
+            }
+
+
+
+            .sct-3{
+                margin-top: 700px;
+                .sct-3-contents{
+                    flex-direction: column;
+                    h5{
+                        width: 100%;
+                    }
+                }
+            }
+
+
+            footer{
+                width: 90%;
+                .my-socials{
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
